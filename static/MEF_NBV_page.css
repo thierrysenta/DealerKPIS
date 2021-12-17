@@ -1,0 +1,234 @@
+
+
+/****************** Table NBV *****************/
+*{
+    margin: 0;
+    pading: 0;
+    box-sizing: border-box;
+    }
+h1{
+    font-weight: 400;
+    }
+a{
+    color: inherit;
+    }
+p{
+    margin-top: .7em;
+    }
+.warning{
+    color: rgb(62,148,236);
+    }
+.st_viewport{
+    max-height: 700px;
+    overflow: auto;
+    }
+
+
+[data-table_id="0"]{
+    background-color: #006400;
+    color: rgb(220,220,220);
+    }
+[data-table_id="1"]{
+    background-color: #8ac926;
+    }
+[data-table_id="2"]{
+    background-color: #415a77;
+    color: rgb(220,220,220);
+    }
+[data-table_id="3"]{
+    background-color: #1982c4;
+    }
+[data-table_id="4"]{
+    background-color: #db3a34;
+    }
+[data-table_id="5"]{
+    background-color: #08bdbd;
+    }
+[data-table_id="6"]{
+    background-color: #0d3b66;
+    color: rgb(220,220,220);
+    }
+[data-table_id="7"]{
+    background-color: #e85d04;
+    }
+[data-table_id="8"]{
+    background-color: #ffca3a;
+    }
+[data-table_id="9"]{
+    background-color: #000000;
+    color: rgb(220,220,220);
+    }
+
+
+._stat{
+    min-width: 22%;
+    }
+
+._stat_title{
+    font-size:20px;
+    weight:bold;
+    text-align: center;
+    }
+
+._month{
+    min-width: 6%;
+    }
+
+._month_background{
+    background: black;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    }
+
+pre{
+    overflow: auto;
+    }
+
+/** Sticky table styles **/
+.st_viewport{
+    background-color: rgb(62,148,236);
+    color: rgb(27,30,36);
+    margin: 10px 0;
+    }
+
+/*  header */
+.st_table_header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: rgb(27,30,36);
+    color: rgb(220,220,220);
+    border: 1px solid white;
+    text-align: middle;
+    }
+.st_table_header h2{
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    margin: 0 10px;
+    padding: 20px 0 0;
+    padding-bottom:20px;
+    }
+.st_table_header .st_row{
+    color: rgba(220,220,220, .7);
+    }
+
+/* table */
+.st_table{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+    }
+/* #   row */
+.st_row{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    }
+.st_table .st_row:nth-child(even){
+    background-color: rgba(0,0,0, .1)
+    }
+/* #   column */
+.st_column{
+    padding: 7px 15px;
+    }
+
+.flags_NBV{
+    width:40px;
+    vertical-align:-80%;
+    padding-right: 8px;
+    vertical-align:middle
+    }
+
+/********** download button for NBV and weekly reports ***********/
+
+.excel_download {
+    background: #ffffff;
+    border: solid 1px #e6e6e6;
+    border-radius: 2px;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 90px;
+    }
+.excel_download_NBV_color{
+    background: green;
+    }
+.excel_download span {
+    border-radius: 4px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 5px 10px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+    }
+
+.excel_download span:last-child {
+    margin-left: -20px;
+    }
+
+.excel_download:before,
+.excel_download:after {
+    background: #ffffff;
+    border: solid 3px #9fb4cc;
+    border-radius: 4px;
+    content: '';
+    display: block;
+    height: 35px;
+    left: 50%;
+    margin: -17px 0 0 -12px;
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    }
+
+.excel_download:hover:before,
+.excel_download:hover:after {
+    background: #e2e8f0;
+    }
+/*a:before{transform:translate(-30%,-60%);}*/
+
+.excel_download:before {
+    margin: -23px 0 0 -5px;
+    }
+
+.excel_download:hover {
+    background: #e2e8f0;
+    border-color: #9fb4cc;
+    }
+
+.excel_download:active {
+    background: #dae0e8;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, .25);
+    }
+
+.excel_download span:first-child {
+    display: none;
+    }
+
+.excel_download:hover span:first-child {
+    display: inline-block;
+    }
+
+.excel_download:hover span:last-child {
+    display: none;
+    }
+

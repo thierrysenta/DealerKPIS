@@ -1,0 +1,94 @@
+<!--   1.0 -         Extends the the unified part from base.html                            -->
+{% extends "base.html" %}
+{% block chart_overview %}
+
+           <div class="card shadow" style="padding:30px; margin-top: 1.5rem;" >
+                <div class="title">
+                    <div class="card_title font-bnpp-sans-cond">
+                        Sales Channels(Group)
+                    </div>
+                </div>
+                <div >
+                    <div class="st_wrap_table" data-table_id="15">
+                        <header>
+                            <div class="st_row">
+                                    <div class="st_column_weekly _stat group_sales_channels group_sales_channels_background" style="background-color:white;"></div>
+                                    <div class="st_column_weekly group_sales_channels group_sales_channels_background" >2021 YTD</div>
+                                    <div class="st_column_weekly group_sales_channels group_sales_channels_background" >Target 2021</div>
+                                    <div class="st_column_weekly group_sales_channels group_sales_channels_background" >Gap 2021 vs Target</div>
+                                    <div class="st_column_weekly group_sales_channels group_sales_channels_background" >2020 YTD</div>
+                                    <div class="st_column_weekly group_sales_channels group_sales_channels_background" >Gap 2021 vs Target</div>
+                           </div>
+                        </header>
+                        <div class="st_table">
+                            <div class="st_row">
+                                <div class="st_column_weekly _stat weekly_month_background_col1">MT Local</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others"  style="background-color:#d3d3d3;">{}</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others" >{}</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others DIFF_SALES_CHANEL_GROUP_STYLE" >{}</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others"  style="background-color:#d3d3d3;">{}</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others DIFF_SALES_CHANEL_GROUP_STYLE2" >{}</div>
+                            </div>
+                            <div class="st_row">
+                                <div class="st_column_weekly _stat weekly_month_background_col1">MT Trading</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others"  style="background-color:#d3d3d3;">{}</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others"  >{}</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others DIFF_SALES_CHANEL_GROUP_STYLE" >{}</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others"  style="background-color:#d3d3d3;">{}</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others DIFF_SALES_CHANEL_GROUP_STYLE2" >{}</div>
+                            </div>
+                            <div class="st_row">
+                                <div class="st_column_weekly _stat weekly_month_background_col1">MT web player</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others"  style="background-color:#d3d3d3;">S["Webplayers_YEAR"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others"  >S["Webplayers_TARGET"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others DIFF_SALES_CHANEL_GROUP_STYLE" >S["DIFF_Y_TARGET_Webplayers"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others"  style="background-color:#d3d3d3;">S["Webplayers_YEARMOINS1"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others DIFF_SALES_CHANEL_GROUP_STYLE2" >S["DIFF_Y_YMOINS1_Webplayers"][0]</div>
+                            </div>
+                            <div class="st_row">
+                                <div class="st_column_weekly _stat weekly_month_background_col1">Physical auction</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others" style="background-color:#d3d3d3;">S["Physical_Auction_YEAR"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others" >S["PhysicalAuction_TARGET"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others DIFF_SALES_CHANEL_GROUP_STYLE" >S["DIFF_Y_TARGET_Physical_Auction"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others" style="background-color:#d3d3d3;">S["Physical_Auction_YEARMOINS1"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others DIFF_SALES_CHANEL_GROUP_STYLE2" >S["DIFF_Y_YMOINS1_Physical_Auction"][0]</div>
+                            </div>
+                            <div class="st_row">
+                                <div class="st_column_weekly _stat weekly_month_background_col1">B2C Channels</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others"  style="background-color:#d3d3d3;">S["B2C_YEAR"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others"  >S["B2C_TARGET"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others DIFF_SALES_CHANEL_GROUP_STYLE" >S["DIFF_Y_TARGET_B2C"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others"  style="background-color:#d3d3d3;">S["B2C_YEARMOINS1"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others DIFF_SALES_CHANEL_GROUP_STYLE2" >S["DIFF_Y_YMOINS1_B2C"][0]</div>
+                            </div>
+                            <div class="st_row">
+                                <div class="st_column_weekly _stat weekly_month_background_col1" style="background-color:white; color:black;border: 0.5px solid black;">Drivers</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others" >S["Drivers_YEAR"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others"  >S["Drivers_TARGET"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others DIFF_SALES_CHANEL_GROUP_STYLE" >S["DIFF_Y_TARGET_Drivers"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others" >S["Drivers_YEARMOINS1"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others DIFF_SALES_CHANEL_GROUP_STYLE2" >S["DIFF_Y_YMOINS1_Drivers"][0]</div>
+                            </div>
+                            <div class="st_row">
+                                <div class="st_column_weekly _stat weekly_month_background_col1" style="background-color:white; color:black;border: 0.5px solid black;">Individuals</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others" >S["Individuals_YEAR"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others"  >S["Individuals_TARGET"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others DIFF_SALES_CHANEL_GROUP_STYLE" >S["DIFF_Y_TARGET_Individuals"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others" >S["Individuals_YEARMOINS1"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others DIFF_SALES_CHANEL_GROUP_STYLE2" >S["DIFF_Y_YMOINS1_Individuals"][0]</div>
+                            </div>
+                            <div class="st_row">
+                                <div class="st_column_weekly _stat weekly_month_background_col1" style="background-color:white; color:black;border: 0.5px solid black;">Release</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others" >S["Release_YEAR"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others"  >S["Release_TARGET"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others DIFF_SALES_CHANEL_GROUP_STYLE" value=S["DIFF_Y_TARGET_Release_FLOAT"][0] >S["DIFF_Y_TARGET_Release"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others" >S["Release_YEARMOINS1"][0]</div>
+                                <div class="st_column_weekly group_sales_channels group_channels_background_others DIFF_SALES_CHANEL_GROUP_STYLE2" value=S["DIFF_Y_YMOINS1_Release_FLOAT"][0] >S["DIFF_Y_YMOINS1_Release"][0]</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+{% endblock %}

@@ -1,0 +1,99 @@
+/******************** weekly covid kpis *********************/
+/* table column */
+.weekly_month{
+    width: 9.1%;
+    }
+.weekly_month_row_select{
+    width: 9.1%;
+    min-height: 60px;
+    position: -webkit-sticky;
+    position: sticky;
+    }
+/* for date title */
+.weekly_month_background{
+    background: black;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    }
+.st_table_header2{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    text-align: middle;
+    }
+/* for date min and max */
+.weekly_month_background2{
+    background: rgb(71,71,71);
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    }
+/* col1 */
+.weekly_month_background_col1{
+    background: rgb(18, 130, 73);
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    }
+/* other col */
+.weekly_month_background_others{
+    background: white;
+    border: 0.5px solid rgb(18, 130, 73);
+    text-align: center;
+    }
+/* col middle */
+.NBV_middlecol_border{
+    border_left:2px solid rgb(18, 130, 73);
+    border_right:2px solid rgb(18, 130, 73);
+    width: 15px;
+    }
+.background_row_blanc{
+    background: white;
+    border: 1px solid white;
+    }
+.st_column_weekly{
+    padding: 18px 20px;
+    }
+.st_column_period{
+    padding: 12px 20px;
+    }
+.font{
+    font-size:12px;
+    font-style: italic;
+    }
+._stat{
+    min-width: 22%;
+    }
+._stat_part2{
+    width: 20%;
+    }
+._stat_title{
+    font-size:20px;
+    weight:bold;
+    text-align: center;
+    }
+
+/* header weekly kpis*/
+.st_table_header_weekly{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    color: rgb(220,220,220);
+    text-align: middle;
+    }
+.st_table_header_weekly .st_row{
+    color: rgba(220,220,220, .7);
+    }
+
+[data-table_id="15"]{
+    background-color: rgb(18, 130, 73);
+    text-align: middle;
+    }
+
+/* download button color*/
+.excel_download_weekly_color{
+    background: #DC2F02;
+    }

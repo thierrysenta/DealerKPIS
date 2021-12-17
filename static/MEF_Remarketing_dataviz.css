@@ -1,0 +1,821 @@
+/***************************************************************************************************/
+/***************************************************************************************************/
+/***                            CSS - Valable pour toutes les pages html                         ***/
+/***************************************************************************************************/
+/***************************************************************************************************/
+
+/* Pages format */
+.page_entity1{
+    width:1600px;
+    min-height: 23.7cm;
+    padding: 1.5cm;
+    margin: auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+/* Titles format */
+.htmlpage_title{
+    text-align: left;
+    font-size: 28px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    }
+.card_title{
+    font-weight: bold;
+    font-size:24px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px ;
+    }
+
+/* font style */
+.font-bnpp-sans-cond {
+	font-family: BNPPSansCondensed, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji!important
+    }
+
+/* Tableaux des DECK */
+
+/*  MEF de la ligne de sélection des Period / Entity  */
+select {
+    appearance: none;
+    /* position: fixed;
+    width: 9%;*/
+    display: block;
+    background-color: rgb(71, 71, 71);
+    height: 36PX;
+    width:  99%;
+    font-family: inherit;
+    font-size: inherit;
+    color: honeydew;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+    text-align-last: center;
+    -webkit-appearance: button;
+  }
+
+.DECK_Cols{
+    font-size:12px;
+    width: 8% ;
+    height:22px;
+    text-align: center;
+    vertical-align: middle;
+    }
+.DECK_FirstCol{
+    text-align: left ;
+    width: 15% ;
+    vertical-align: middle;
+    border: 3px solid white;
+    font-size:12px;
+    border: 3px solid white;
+    border-right: 8px solid white;
+    height:22px;
+    padding:1px;
+    max-width:20px;
+    min-width:20px;
+    width: 15% ;
+    }
+.DECK_MiddleCol{
+    height: 36PX;
+    width:1%;
+    }
+.DECK_KPILines{
+    font-style: italic;
+    height: 33px;
+    font-weight: bolder;
+    text-align: left;
+    padding-top:9px;
+    padding-left: 100px;
+    vertical-align: middle;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 100%; float: left；
+    }
+
+.Cell_empty {
+background: linear-gradient(
+        135deg,
+        rgba(39, 39, 39, .5) 0, rgba(39, 39, 39, .5) 25%, transparent 25%, transparent 50%,
+        rgba(39, 39, 39, .5) 25%, rgba(39, 39, 39, .5) 75%, transparent 75%, transparent
+      );
+      background-size: 3px 3px;
+}
+
+
+
+/**********************************************************************/
+/***                    CSS - page : base.html                      ***/
+/**********************************************************************/
+/* The top green line */
+.topbar-wrapper {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(18, 130, 73);
+    justify-content: center;
+    /*position: fixed;*/
+    text-align: center;
+    vertical-align: middle;
+    }
+.topbar-wrapper li {
+    color: white;
+    padding-top: 5px;
+    text-align: center;
+    vertical-align: middle;
+    }
+.topbar-wrapper a {
+    display: block;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    }
+
+/* header with logo*/
+.header {
+    height: 100px;
+    width: 100%;
+    /*position: fixed;*/
+    padding: 0px;
+    background-color: rgb(227 231 233);
+     /* add for info box position */
+    }
+/* Logo style */
+.header .logo {
+    display: block;
+    float: left;
+    width:180px;
+    padding: 25px 7px;
+    }
+
+/* button download style */
+.full-view {
+    float: right;
+    color: white;
+    margin-top: 39px;
+    margin-right: 100px;
+    }
+.download {
+    background-color: rgb(18, 130, 73); /* Green */
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 2px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+.download a {
+    background-color: rgb(18, 130, 73);
+    color: white;
+    float: right;
+    }
+.download:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(18, 130, 73);
+    float: right;
+    }
+
+/* hover touch li then show .info box */
+.nav li:hover + .info, .info:hover {
+    height: 500px;
+    width: 100%;
+    top: 100px;
+    left: 0px;
+    z-index: 999999;
+    position: absolute;
+    text-align: center;
+    border-top: 1px rgb(223, 223, 223);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* public type */
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+page.w {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font-family: "Lato", sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* css pour la page Overview.html */
+.card{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    min-width:0;
+    word-wrap:break-word;
+    background-color:#fff;
+    background-clip:border-box;
+    border:1px solid rgba(23,35,40,.125);
+    border-radius:.25rem
+    }
+.shadow{
+    box-shadow:0 .25rem .5rem rgba(23,35,40,.175)!important
+    }
+
+.card-body{
+    flex:1 1 auto;
+    min-height:1px;
+    padding:2rem
+    }
+.align-items-start {
+	align-items: flex-start!important
+}
+.d-flex {
+	display: flex!important
+}
+.justify-content-between{
+    justify-content:space-between!important
+    }
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -16px;
+	margin-left: -16px
+}
+.row-cols-1>* {
+	flex: 0 0 100%;
+	max-width: 100%
+}
+@media (min-width:576px) {
+	.row-cols-sm-2>* {
+		flex: 0 0 50%;
+		max-width: 50%
+	}
+}
+
+@media (min-width:992px) {
+	.row-cols-lg-4>* {
+		flex: 0 0 25%;
+		max-width: 25%
+	}
+}
+
+.card-header{padding:.75rem 2rem;
+             margin-bottom:0;
+             background-color:rgba(23,35,40,.03);
+             border-bottom:1px solid rgba(23,35,40,.125)}
+
+.card-title{margin-bottom:.75rem}
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    margin-right:-16px;
+    margin-left:-16px
+    }
+.col {
+	flex-basis: 0;
+	flex-grow: 1;
+	max-width: 100%
+}
+
+.main {
+  margin-left: 120px; /* Same as the width of the sidenav */
+  font-size: 15px; /* Increased text to enable scrolling */
+  margin-top: 15px;
+  padding-left: 10px;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font-family: "Lato", sans-serif;
+    }
+/* table group sales channels*/
+.group_sales_channels{
+  width: 16%;
+    }
+.group_sales_channels_background{
+  background: rgb(18,130,73);
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+    }
+.group_channels_height{
+  height: 50px;
+    }
+.group_channels_background_others{
+  background: white;
+  border: 0.5px solid black;
+  text-align: center;
+    }
+
+
+/* UCMI */
+.UCMI_background{
+    background-color: rgba(237, 125, 49, 255);
+    }
+.UCMI_border{
+    border: 2px solid rgba(237, 125, 49, 255);
+    }
+.UCMI_middlecol_border{
+    border_left:2px solid rgba(237, 125, 49, 255);
+    border_right:2px solid rgba(237, 125, 49, 255);
+    }
+/*Stock IRIS*/
+.StockIRIS_background{
+    background-color: rgba(255,192,0,255);
+    }
+.StockIRIS_border{
+    border: 2px solid rgba(255,192,0,255);
+    }
+.StockIRIS_middlecol_border{
+    border_left:2px solid rgba(255,192,0,255);
+    border_right:2px solid rgba(255,192,0,255);
+    }
+/*Stock MT*/
+.StockMT_background{
+    background-color: rgb(188,219,165);
+    }
+.StockMT_border{
+    border: 2px solid rgb(188,219,165);
+    }
+.StockMT_middlecol_border{
+    border_left:2px solid rgb(188,219,165);
+    border_right:2px solid rgb(188,219,165);
+    }
+/* IRIS SalesChannel*/
+.IRISSalesChannel_background{
+    background-color: rgb(38,160,190);
+    }
+.IRISSalesChannel_border{
+    border: 2px solid rgb(38,160,190);
+    }
+.IRISSalesChannel_middlecol_border{
+    border_left:2px solid rgb(38,160,190);
+    border_right:2px solid rgb(38,160,190);
+    }
+/* MT KPIs */
+.MTKPIs_background{
+    background-color: rgba(21,164,63);
+    }
+.MTKPIs_border{
+    border: 2px solid rgba(21,164,63);
+    }
+.MTKPIs_middlecol_border{
+    border_left:2px solid rgba(21,164,63);
+    border_right:2px solid rgba(21,164,63);
+    }
+/* Claims */
+.Claims_background{
+    background-color: rgb(19,157,123);
+    }
+.Claims_border{
+    border: 2px solid rgb(19,157,123);
+    }
+.Claims_middlecol_border{
+    border_left:2px solid rgb(19,157,123);
+    border_right:2px solid rgb(19,157,123);
+    }
+/*Portfolio*/
+.Portfolio_background{
+    background-color: rgb(129,198,63);
+    }
+.Portfolio_border{
+    border: 2px solid rgb(129,198,63);
+    }
+.Portfolio_middlecol_border{
+    border_left:2px solid rgb(129,198,63);
+    border_right:2px solid rgb(129,198,63);
+    }
+.flags_in_table{
+    margin:0px 3px;
+    width: 17px;
+    vertical-align:middle;
+}
+ /* GRAPHIQUES */
+#home_echarts_global_sales{
+    width: 100%;
+    height: 600px;
+    padding-left:2px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    }
+#chart_overview_per_entity{
+    width: 100%;
+    height: 500px;
+    padding-top: 20px;
+    padding-left:2px;
+    }
+#stock_chart_box{
+    width: 100%;
+    height: 600px;
+    padding-top: 10px;
+    padding-left:2px;
+    }
+#NBV_echarts_global_sales{
+    width: 100%;
+    height: 600px;
+    padding-left:2px;
+    }
+/* stock_chart_box button style */
+.btn_brand_chart{
+    margin-top: 37px;
+    float:left;
+    width:7%
+    }
+.btn_brand_chart .button_brand {
+  background-color: rgb(71, 71, 71);
+  border: 2px solid black;
+  color: white;
+  padding: 7px 10px;
+  margin-top: 20px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 15px;
+  width: 70px;
+  cursor: pointer;
+  text-align:center;
+    }
+
+.btn_brand_chart .button_brand:hover {
+  background-color: rgb(18, 130, 73);
+    }
+#pie_saleschannel_chart_left {
+    width: 65%;
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+
+#pie_saleschannel_chart_right  {
+    width: 35%;
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+
+#portfolio_echarts, #portfolio_echarts_float{
+    width: 50%;
+    height: 400px;
+    float: left;
+    padding-left:2px;
+    padding-top: 30px;
+}
+#Trading_geo_echarts{
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#NBV_graph{
+    width: 95%;
+    height: 600px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    margin-left: 60px;
+    margin-right: auto;
+}
+
+#NBV_volume{
+    width: 95%;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: auto;
+    }
+
+#Brand_segment_echarts{
+    width: 70%;
+    height: 670px;
+    padding-bottom:37px;
+    float:left;
+}
+#RMK_segment_echarts{
+    width: 20%;
+    height: 670px;
+    padding-bottom:37px;
+    float:left;
+}
+
+#geo_echarts{
+    width: 90%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+/*  BUTTON for geo graphic */
+.btn {
+  margin-top: 20px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 100%;
+  font-size: 12px;
+  border-radius: 30px;
+}
+
+.btn-color {
+  background-color: white;
+  color: black;
+  border: 2px solid #008000;
+}
+
+.btn-color:hover{
+  background-color: #008000;
+  color: white;
+}
+
+/* Button penetration Trading */
+.btn_PENETRATION {
+  background-color: rgb(18, 130, 73);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 3px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 30px;
+    }
+.btn-financial {
+  background-color: rgb(18, 130, 73);
+  color: white;
+  /*border: 3px solid black;*/
+    }
+.btn-B2B {
+  background-color: #eaf8da;
+  /*border: 3px solid rgb(18, 130, 73);*/
+  color: black;
+  /*border: 2px solid rgb(18, 130, 73);*/
+    }
+/*.btn-B2B:hover{
+  background-color: rgb(18, 130, 73);
+  color: white;
+  border: 3px solid black;
+  }*/
+
+/* ZOOM Button design in the geo chart */
+.zoom_box {
+  align-items: center;
+  display: flex;
+  height: 39px;
+  justify-content: center;
+  position: relative;
+  width: 360px;
+}
+.bar {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  height: 32px;
+  left: 0;
+  padding: 0 21px;
+  position: absolute;
+  width: 100%;
+}
+.bar-purple {
+  background: #002855;
+  color: white;
+  clip-path: polygon(
+    360px 0,
+    360px 32px,
+    43px 32px,
+    39.775442px 31.67494px,
+    36.772078px 30.74264px,
+    34.054248px 29.26745px,
+    31.686292px 27.31371px,
+    29.732549px 24.94575px,
+    28.257359px 22.22792px,
+    27.325063px 19.22456px,
+    27px 16px,
+    27.325063px 12.77544px,
+    28.257359px 9.77208px,
+    29.732549px 7.05425px,
+    31.686292px 4.68629px,
+    34.054248px 2.73255px,
+    36.772078px 1.25736px,
+    39.775442px 0.32506px,
+    43px 0
+  );
+  transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.option {
+  cursor: pointer;
+  line-height: 142px;
+  text-align: center;
+  width: 33.33%;
+}
+.bar-outer {
+  clip-path: polygon(0 0, 120px 0, 120px 32px, 0 32px);
+  clip-path: polygon(
+    0 0,
+    0 32px,
+    104px 32px,
+    107.22456px 31.67494px,
+    110.22792px 30.74264px,
+    112.94575px 29.26745px,
+    115.31371px 27.31371px,
+    117.26745px 24.94575px,
+    118.74264px 22.22792px,
+    119.67494px 19.22456px,
+    120px 16px,
+    119.67494px 12.77544px,
+    118.74264px 9.77208px,
+    117.26745px 7.05425px,
+    115.31371px 4.68629px,
+    112.94575px 2.73255px,
+    110.22792px 1.25736px,
+    107.22456px 0.32506px,
+    104px 0
+  );
+  height: 32px;
+  pointer-events: none;
+  transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+}
+.bar-outer.pos2 .bar-purple {
+  clip-path: polygon(
+    360px 0,
+    360px 32px,
+    149px 32px,
+    145.775442px 31.67494px,
+    142.772078px 30.74264px,
+    140.054248px 29.26745px,
+    137.686292px 27.31371px,
+    135.732549px 24.94575px,
+    134.257359px 22.22792px,
+    133.325063px 19.22456px,
+    133px 16px,
+    133.325063px 12.77544px,
+    134.257359px 9.77208px,
+    135.732549px 7.05425px,
+    137.686292px 4.68629px,
+    140.054248px 2.73255px,
+    142.772078px 1.25736px,
+    145.775442px 0.32506px,
+    149px 0
+  );
+}
+.bar-outer.pos2 {
+  clip-path: polygon(
+    0 0,
+    0 32px,
+    210px 32px,
+    213.22456px 31.67494px,
+    216.22792px 30.74264px,
+    218.94575px 29.26745px,
+    221.31371px 27.31371px,
+    223.26745px 24.94575px,
+    224.74264px 22.22792px,
+    225.67494px 19.22456px,
+    226px 16px,
+    225.67494px 12.77544px,
+    224.74264px 9.77208px,
+    223.26745px 7.05425px,
+    221.31371px 4.68629px,
+    218.94575px 2.73255px,
+    216.22792px 1.25736px,
+    213.22456px 0.32506px,
+    210px 0
+  );
+}
+.bar-outer.pos3 .bar-purple {
+  clip-path: polygon(
+    360px 0,
+    360px 32px,
+    256px 32px,
+    252.775442px 31.67494px,
+    249.772078px 30.74264px,
+    247.054248px 29.26745px,
+    244.686292px 27.31371px,
+    242.732549px 24.94575px,
+    241.257359px 22.22792px,
+    240.325063px 19.22456px,
+    240px 16px,
+    240.325063px 12.77544px,
+    241.257359px 9.77208px,
+    242.732549px 7.05425px,
+    244.686292px 4.68629px,
+    247.054248px 2.73255px,
+    249.772078px 1.25736px,
+    252.775442px 0.32506px,
+    256px 0
+  );
+}
+.bar-outer.pos3 {
+  clip-path: polygon(0 0, 333px 0, 333px 32px, 0 32px);
+  clip-path: polygon(
+    0 0,
+    0 32px,
+    317px 32px,
+    320.22456px 31.67494px,
+    323.22792px 30.74264px,
+    325.94575px 29.26745px,
+    328.31371px 27.31371px,
+    330.26745px 24.94575px,
+    331.74264px 22.22792px,
+    332.67494px 19.22456px,
+    333px 16px,
+    332.67494px 12.77544px,
+    331.74264px 9.77208px,
+    330.26745px 7.05425px,
+    328.31371px 4.68629px,
+    325.94575px 2.73255px,
+    323.22792px 1.25736px,
+    320.22456px 0.32506px,
+    317px 0
+  );
+}
+.bar-outer.left .bar-purple {
+  transition-delay: 0;
+}
+.bar-outer.left {
+  transition-delay: 80ms;
+}
+.bar-outer.right .bar-purple {
+  transition-delay: 80ms;
+}
+.bar-outer.right {
+  transition-delay: 0;
+}
+/*  6 pie charts in page period */
+#box_6pie_charts_A, #box_6pie_charts_B, #box_6pie_charts_C, #box_6pie_charts_D, #box_6pie_charts_E, #box_6pie_charts_F{
+    width: 16.6667%;
+    height: 400px;
+    padding-left:2px;
+    padding-bottom: 50px;
+    float: left;
+    }
+
+
+/**/
+#chart_overview_weekly {
+    width: 90%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Thermometer and barometer page css*/
+.flags_thermo{
+    width: 70px;
+    float: left;
+    padding-left: 10px;
+    }
+.border_white{
+    border: 1px white solid;
+    }
+.border_black{
+    border: 1px black solid;
+    }
+[data-table_id="10"]{
+    background: rgb(215,243,228);
+    background: linear-gradient(0deg, rgba(215,243,228,1) 0%, rgba(99,207,148,1) 100%);
+    }
+[data-table_id="11"]{
+    background: rgb(253,235,223);
+    background: linear-gradient(0deg, rgba(253,235,223,1) 0%, rgba(244,176,129,1) 100%);
+    }
+[data-table_id="12"]{
+    background: rgb(255,245,213);
+    background: linear-gradient(0deg, rgba(255,245,213,1) 0%, rgba(255,216,94,1) 100%);
+    }
+
+[data-table_id="space"]{
+    background: white;
+    }
+[data-table_id="13"]{
+    background:#dbdbdb;
+    }
+

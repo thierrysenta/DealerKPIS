@@ -1,0 +1,318 @@
+/* subpage shadow */
+.shadow-sm {
+	box-shadow: 0 .25rem .5rem rgba(23, 35, 40, .175)!important
+}
+.border-0 {
+	border: 0!important
+}
+
+/****** vehicles card style ******/
+.bg-info-lighter {
+	background-color: #e1f5fa!important
+}
+a.bg-info-lighter:focus,
+a.bg-info-lighter:hover,
+button.bg-info-lighter:focus,
+button.bg-info-lighter:hover {
+	background-color: #b5e6f3!important
+}
+/* text style in vehicles card */
+.text-info-darker {
+	color: #0e5f73!important
+}
+a.text-info-darker:focus,
+a.text-info-darker:hover {
+	color: #06272f!important
+}
+
+/****** buyers card style ******/
+.bg-secondary-lighter {
+	background-color: #edeff2!important
+}
+a.bg-secondary-lighter:focus,
+a.bg-secondary-lighter:hover,
+button.bg-secondary-lighter:focus,
+button.bg-secondary-lighter:hover {
+	background-color: #cfd5dd!important
+}
+/* text style in buyers card */
+.text-secondary-darker {
+	color: #5c6166!important
+}
+
+a.text-secondary-darker:focus,
+a.text-secondary-darker:hover {
+	color: #383b3e!important
+}
+
+/****** style Avg number of Bidders ******/
+.bg-warning-lighter {
+	background-color: #ffebd9!important
+}
+
+a.bg-warning-lighter:focus,
+a.bg-warning-lighter:hover,
+button.bg-warning-lighter:focus,
+button.bg-warning-lighter:hover {
+	background-color: #ffd0a6!important
+}
+/* text style in style Avg number of Bidders */
+.text-warning-darker {
+	color: #a85105!important
+}
+
+a.text-warning-darker:focus,
+a.text-warning-darker:hover {
+	color: #5e2d03!important
+}
+/****** style B2C card ***/
+.bg-success-lighter {
+	background-color: #e7f5dc!important
+}
+
+a.bg-success-lighter:focus,
+a.bg-success-lighter:hover,
+button.bg-success-lighter:focus,
+button.bg-success-lighter:hover {
+	background-color: #cceab4!important
+}
+/* text style in B2C card ******/
+.text-success-darker {
+	color: #32660a!important
+}
+
+a.text-success-darker:focus,
+a.text-success-darker:hover {
+	color: #102003!important
+}
+
+/* height style */
+.h-100 {
+	height: 100%!important
+}
+
+/* center text */
+.text-center {
+	text-align: center!important
+}
+
+/* Margin format */
+.mb-2,
+.my-2 {
+	margin-bottom: .5rem!important
+}
+.mb-3,
+.my-3 {
+	margin-bottom: 1rem!important
+}
+
+.mr-n2,
+.mx-n2 {
+	margin-right: -.5rem!important
+}
+
+.ml-n2,
+.mx-n2 {
+	margin-left: -.5rem!important
+}
+
+
+/* align and justify items */
+.d-flex {
+	display: flex!important
+}
+
+.justify-content-between {
+	justify-content: space-between!important
+}
+
+.align-items-start {
+	align-items: flex-start!important
+}
+
+
+/* font style */
+.font-bnpp-sans-cond {
+	font-family: BNPPSansCondensed, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji!important
+}
+.font-weight-bold {
+	font-weight: 700!important
+}
+.text-uppercase {
+	text-transform: uppercase!important
+}
+
+/* last date refresh style */
+.text-secondary-darker {
+	color: #5c6166!important
+}
+a.text-secondary-darker:focus,
+a.text-secondary-darker:hover {
+	color: #383b3e!important
+}
+.text-dark {
+	color: #172328!important
+}
+a.text-dark:focus,
+a.text-dark:hover {
+	color: #000!important
+}
+
+/* row style: To make the card to be horizontal*/
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -16px;
+	margin-left: -16px
+}
+
+
+/* row/col flexible */
+.row-cols-1>* {
+	flex: 0 0 100%;
+	max-width: 100%
+}
+
+.row-cols-2>* {
+	flex: 0 0 50%;
+	max-width: 50%
+}
+
+.row-cols-3>* {
+	flex: 0 0 33.3333333333%;
+	max-width: 33.3333333333%
+}
+
+/* col style */
+.col {
+	flex-basis: 0;
+	flex-grow: 1;
+	max-width: 100%
+}
+
+/* padding style */
+.p-3 {
+	padding: 1rem!important /* padding all the sides */
+}
+
+.pr-2,
+.px-2 {
+	padding-right: .5rem!important
+}
+.pl-2,
+.px-2 {
+	padding-left: .5rem!important
+}
+
+.pr-3,
+.px-3 {
+	padding-right: 1rem!important
+}
+.pl-3,
+.px-3 {
+	padding-left: 1rem!important
+}
+
+/* Card style: by default */
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(23, 35, 40, .125);
+	border-radius: .25rem
+}
+
+.card2 {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(23, 35, 40, .125);
+	border-radius: .25rem
+}
+
+.card-body {
+	flex: 1 1 auto;
+	min-height: 1px;
+	padding: 2rem
+}
+.card-title {
+	margin-bottom: .75rem
+}
+.card-header {
+	padding: .75rem 2rem;
+	margin-bottom: 0;
+	background-color: rgba(23, 35, 40, .03);
+	border-bottom: 1px solid rgba(23, 35, 40, .125)
+}
+.card-header:first-child {
+	border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0
+}
+
+.header-text-style{
+font-size: 16px;
+}
+
+
+/*  display */
+.display-4 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	line-height: 1.2
+}
+
+@media (max-width:1200px) {
+	.display-4 {
+		font-size: calc(1.475rem + 2.7vw)
+	}
+}
+
+/********** median display : LAYOUT *********/
+@media (min-width:768px) {
+	.mx-md-0 {
+		margin-right: 0!important
+	}
+	.mb-md-0,
+	.my-md-0 {
+		margin-bottom: 0!important
+	}
+	.ml-md-0,
+	.mx-md-0 {
+		margin-left: 0!important
+	}
+	.p-md-3 {
+		padding: 1rem!important
+	}
+	.pr-md-3,
+	.px-md-3 {
+		padding-right: 1rem!important
+	}
+	.px-md-3 {
+		padding-left: 1rem!important
+	}
+}
+
+@media (min-width:576px) {
+	.row-cols-sm-2>* {
+		flex: 0 0 50%;
+		max-width: 50%
+	}
+}
+
+@media (min-width:992px) {
+	.row-cols-lg-4>* {
+		flex: 0 0 25%;
+		max-width: 25%
+	}
+}
+
+
+
+
